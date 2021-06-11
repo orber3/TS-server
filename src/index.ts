@@ -3,6 +3,8 @@ import express, {Request , Response} from 'express'
 import {router} from './routes/loginRoute'
 import cookieSession from 'cookie-session';
 import './controllers/LoginController'
+import './controllers/decoraters/rootcontorller'
+
 import {AppRouter  } from'./appRouter'
 
 
