@@ -11,9 +11,6 @@ function requireAuth(req, res, next) {
     res.status(403);
     res.send('not permitted to enter - please login');
 }
-router.get('/login', function (req, res) {
-    res.send("\n\n          <form method = \"POST\" > \n            <div>\n            <label> email </label>\n            <input name =\"email\" />\n            </div>\n            <div>\n            <label> password </label>\n            <input name=\"password\" type = \"password\" /> \n          </div>\n          <button> submit </button> \n          </form>\n        ");
-});
 router.post('/login', function (req, res) {
     var _a = req.body, email = _a.email, password = _a.password;
     if (email && password && email === 'hi@gmail.com' && password === '1234') {

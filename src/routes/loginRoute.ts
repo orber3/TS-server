@@ -19,23 +19,6 @@ interface requestWithBody extends Request {
  }
 
 
-router.get('/login', (req: Request,res: Response) => { 
-
-        res.send(`
-
-          <form method = "POST" > 
-            <div>
-            <label> email </label>
-            <input name ="email" />
-            </div>
-            <div>
-            <label> password </label>
-            <input name="password" type = "password" /> 
-          </div>
-          <button> submit </button> 
-          </form>
-        `)
-})
 
 
 
